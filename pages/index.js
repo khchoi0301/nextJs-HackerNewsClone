@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
+import StoryList from '../component/StoryList'
 
 class Index extends Component {
     static async getInitialProps() {
@@ -24,10 +25,8 @@ class Index extends Component {
         return <div>
             <h1>
                 hacker next
-                </h1>
-            <div>
-                {stories.map(story => (<h2>{story.title}</h2>))}
-            </div>
+            </h1>
+            <StoryList stories={stories} />
         </div>;
     }
 }
