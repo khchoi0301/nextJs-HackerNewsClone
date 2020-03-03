@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import fetch from 'isomorphic-fetch'
 import Error from 'next/error'
 import Layout from '../component/Layout'
+import CommentList from '../component/CommentList'
 
 export default class Story extends Component {
     static async getInitialProps({ req, res, query }) {
@@ -35,6 +36,12 @@ export default class Story extends Component {
                         <strong>{story.comments_count} comments</strong>
                         <strong>{story.time_ago}</strong>
                     </div>
+
+                    {story.comments.length > 0 ? (
+                        <CommentList comments={story.comments} />
+                    ) : (
+                            <div>no comments for this story</div>
+                        )}
                 </main>
 
                 <style jsx>{`
