@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
         return (
             <html lang='ko-KR'>
                 <Head>
-                    <link rel="manifest" href="manifest.json" />
+                    <link rel="manifest" href="/static/manifest.json" />
 
                     <meta name="mobile-web-app-capable" content="yes" />
                     <meta name="apple-mobile-web-app-capable" content="yes" />

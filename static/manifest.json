@@ -1,10 +1,11 @@
 {
     "name": "Hacker Next",
     "short_name": "hacker-next",
-    "lang": "ko-KR",
+    "lang": "en-US",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#f60",
+    "background_color": "#f0f",
     "icons": [
         {
             "src": "/static/icons/icon-512x512.png",
